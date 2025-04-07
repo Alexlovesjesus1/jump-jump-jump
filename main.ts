@@ -156,22 +156,22 @@ mySprite.ay = 500
 info.setScore(0)
 game.onUpdateInterval(2000, function () {
     projectile = sprites.createProjectileFromSide(img`
-        . . . . . c c c c c c c . . . . 
-        . . . . c 6 7 7 7 7 7 6 c . . . 
-        . . . c 7 c 6 6 6 6 c 7 6 c . . 
-        . . c 6 7 6 f 6 6 f 6 7 7 c . . 
-        . . c 7 7 7 7 7 7 7 7 7 7 c . . 
-        . . f 7 8 1 f f 1 6 7 7 7 f . . 
-        . . f 6 f 1 f f 1 f 7 7 7 f . . 
-        . . . f f 2 2 2 2 f 7 7 6 f . . 
-        . . c c f 2 2 2 2 7 7 6 f c . . 
-        . c 7 7 7 7 7 7 7 7 c c 7 7 c . 
-        c 7 1 1 1 7 7 7 7 f c 6 7 7 7 c 
-        f 1 1 1 1 1 7 6 f c c 6 6 6 c c 
-        f 1 1 1 1 1 1 6 6 c 6 6 6 c . . 
-        f 6 1 1 1 1 1 6 6 6 6 6 6 c . . 
-        . f 6 1 1 1 1 1 6 6 6 6 c . . . 
-        . . f f c c c c c c c c . . . . 
+        . . . . . . . e e e e e . . . . 
+        . . . . . e e 2 2 2 2 2 e . . . 
+        . . . . e e 2 2 2 2 2 2 2 e . . 
+        . . . . e 9 4 2 2 2 2 2 4 b e . 
+        . . e e 9 9 4 4 2 2 2 2 4 9 b e 
+        . e 2 2 9 9 4 4 4 2 2 2 4 9 9 e 
+        e 2 2 2 9 9 2 4 4 4 4 4 2 9 9 e 
+        e 2 2 2 9 9 e e e e e e e 9 9 e 
+        e 2 2 2 9 b e b b b e b e b 9 e 
+        e 2 e e e e b b b b e b b e b e 
+        e e 3 3 e e 2 2 2 2 e 2 2 e e e 
+        e 3 3 e e e e e e e e e e e e e 
+        e e e e e e e e e e e e e e e e 
+        e e e e f f f e e e e f f f e e 
+        . e e f b c c f e e f b c c f . 
+        . . . . b b f . . . . b b f . . 
         `, randint(-100, -80), 0)
     tiles.placeOnTile(projectile, tiles.getTileLocation(10, 9))
     info.changeScoreBy(1)
